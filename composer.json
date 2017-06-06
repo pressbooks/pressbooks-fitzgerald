@@ -1,6 +1,6 @@
 {
     "name": "pressbooks/pressbooks-fitzgerald",
-    "description": "Named for English author Jane Austen, this is a traditional book theme, with serif fonts, that works well for fiction and simple-layout non-fiction.",
+    "description": "Serif body, with condensed sans serif header fonts. Based on a theme commissioned by the University of Minnesota Press.",
     "type": "wordpress-theme",
     "require": {
         "composer/installers": "^1.2"

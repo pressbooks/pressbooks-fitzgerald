@@ -1,0 +1,47 @@
+{
+  "name": "@pressbooks/pressbooks-fitzgerald",
+  "description": "Serif body, with condensed sans serif header fonts. Based on a theme commissioned by the University of Minnesota Press.",
+  "author": "Pressbooks (Book Oven Inc.)",
+  "license": "GPL-3.0-or-later",
+  "engines": {
+    "node": ">= 18"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "pressbooks-build-tools": "^4.0.0"
+  },
+  "scripts": {
+    "fix": "npm run -s fix:styles",
+    "fix:styles": "stylelint --fix \"**/*.scss\" scss",
+    "lint": "npm run -s lint:styles",
+    "lint:styles": "stylelint  \"**/*.scss\" scss",
+    "test": "npm run -s lint"
+  },
+  "stylelint": {
+    "extends": "./node_modules/pressbooks-build-tools/config/stylelint.js",
+    "rules": {
+      "scss/at-import-no-partial-leading-underscore": null,
+      "no-invalid-position-at-import-rule": null,
+      "selector-pseudo-class-no-unknown": [
+        true,
+        {
+          "ignorePseudoClasses": [
+            "after"
+          ]
+        }
+      ],
+      "property-no-unknown": [
+        true,
+        {
+          "ignoreProperties": [
+            "prince-hyphenate-before",
+            "prince-page-group",
+            "prince-bookmark-level",
+            "prince-hyphenate-lines",
+            "footnote-style-position"
+          ]
+        }
+      ]
+    }
+  }
+}

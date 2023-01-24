@@ -6,10 +6,10 @@ Serif body, with condensed sans serif header fonts. Based on a theme commissione
 
 ## Requirements
 
-* PHP >= 5.6
-* WordPress >= 4.8.0
-* Pressbooks >= 4.0.0
-* Pressbooks Book >= 1.9.0
+* PHP >= 8.0
+* WordPress >= 6.1.1
+* Pressbooks >= 6.4.0
+* Pressbooks Book >= 2.0.0
 
 ## Installation
 
